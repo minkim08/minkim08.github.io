@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Suranna&display=swap" rel="stylesheet">
+        <title>minkim | Welcome</title>
+
+        <!--JavaScript-->
+        <script>
+            function fadeInPage() {
+                if (!window.AnimationEvent) {
+                    return;
+                }
+                var fader = document.getElementById("fader");
+                fader.classList.add("fade-out");
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                let buttons = document.querySelectorAll('button');
+                buttons.forEach((hover) => {
+                    hover.addEventListener('mouseenter', function() {
+                        hover.style.boxShadow="5px 5px 5px rgba(169, 164, 145, 0.5)";
+                        hover.style.fontSize="25px";
+                        hover.style.backgroundColor="white";
+                    });
+                });
+                buttons.forEach((hover) => {
+                    hover.addEventListener('mouseleave', function() {
+                        hover.style.boxShadow="none";
+                        hover.style.fontSize="20px";
+                        hover.style.backgroundColor="snow";
+                    });
+                });
+            });
+        </script>
+
+    </head>
+    <body class="fullscreen">
+        <svg id="fader"></svg>
+        <script>
+            fadeInPage();
+        </script>
+        <div>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a href="index.html" class="navbar-brand">  minkim08</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                        <ul class="navbar-nav ms-auto text-center navbar-font">
+                            <li>
+                                <button class="nav-buttons" type="button" onclick="window.location='about.html';">About Me</button>
+                            </li>
+                            <li>
+                                <button class="nav-buttons" type="button" onclick="window.location='projects.html';">Projects</button>
+                            </li>
+                            <li>
+                                <button class="nav-buttons" type="button" onclick="window.location='contact.html';">Contact</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="main-page-format">
+            <div class="name">
+                <h2 class="name">Joshua Kim</h2>
+            </div>
+            <div class="description">
+                <hr>
+                <p class="indent">Hi! I'm Joshua Kim, an incoming Computer Engineering student at the Universty of Waterloo. This site acts as a log of my progress towards becoming a successful developer. My goal is to assist people around the world through technology that is capable of changing lives.</p>
+            </div>
+            <div class="socials-position">
+                <a href="#" class="fa fa-github" onclick="window.location='https://www.github.com/minkim08'"></a>
+                <a href="#" class="fa fa-linkedin" onclick="window.location='https://www.linkedin.com/in/minkim08'"></a>
+                <a href="#" class="fa fa-instagram" onclick="window.location='https://www.instagram.com/minkim08/'"></a>
+                <a href="#" class="fa fa-reddit" onclick="window.location='https://www.reddit.com/user/minkin08'"></a>
+                <br>
+                <br>
+                <small class="copyright">Copyright &copy; minkim08</small>
+            </div>
+        </div>
+    </body>
+</html>
